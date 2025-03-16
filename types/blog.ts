@@ -11,6 +11,9 @@ export type Blog = {
   title: string;
   slug?: any;
   metadata?: string;
+  linkTo?: string;
+  subtitle?: string;
+  key?: string;
   body?: string;
   mainImage?: any;
   author?: Author;

@@ -5,7 +5,7 @@ import Image from "next/image";
 type HeaderInfo = {
   title?: string;
   subtitle: string;
-  description: string;
+  description?: string;
 };
 
 interface ILogoProps {
