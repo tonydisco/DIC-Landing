@@ -14,7 +14,7 @@ import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
-  title: "...: Welcome to DIC -  Dong Tien :...",
+  title: "Welcome to DIC -  Dong Tien",
 
   // other metadata
   description:
@@ -25,7 +25,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Brands />
+      <div className="mb-20">
+        <Brands />
+      </div>
       <Integration />
       {/* <Feature />
       <About />

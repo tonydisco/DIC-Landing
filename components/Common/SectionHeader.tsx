@@ -16,7 +16,7 @@ interface ILogoProps {
 }
 
 const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
-  const { title, subtitle, description } = headerInfo;
+  const { subtitle } = headerInfo;
 
   return (
     <>
@@ -39,18 +39,21 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
         viewport={{ once: true }}
         className="animate_top mx-auto text-center"
       >
-        {title && (
-          <div className="mb-4 inline-block rounded-full bg-zumthor px-4.5 py-1.5 dark:border dark:border-strokedark dark:bg-blacksection">
-            <span className="text-sectiontitle font-medium text-black dark:text-white">
-              {title}
-            </span>
+        <div className="relative">
+          <h2 className="relative top-2 mx-auto mb-4 text-3xl font-bold capitalize text-white dark:text-white xl:text-itemtitle">
+            {subtitle}
+          </h2>
+          <div className="absolute -bottom-[12px] left-0 right-0 top-0 -z-1 w-full">
+            <PureImage
+              url="/images/landing/BANNER-TITLE.png"
+              style={{
+                width: "100%",
+              }}
+              mode="fill"
+            />
           </div>
-        )}
-
-        <h2 className="mx-auto mb-4 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-          {subtitle}
-        </h2>
-        <p className="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]">{description}</p>
+        </div>
+        {/* <p className="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]">{description}</p> */}
       </motion.div>
       {/* <!-- Section Title End --> */}
     </>

@@ -36,13 +36,13 @@ const brandData: Brand[] = [
     imageLight: "/images/brand/brand-5.png",
     image: "/images/brand/brand-5.png",
   },
-  // {
-  //   id: 0.7,
-  //   name: "Client",
-  //   href: "#",
-  //   imageLight: "/images/brand/brand-6.png",
-  //   image: "/images/brand/brand-6.png",
-  // },
+  {
+    id: 0.7,
+    name: "Client",
+    href: "#",
+    imageLight: "/images/brand/brand-6.png",
+    image: "/images/brand/brand-6.png",
+  },
   // {
   //   id: 0.8,
   //   name: "Client",

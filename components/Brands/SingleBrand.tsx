@@ -1,3 +1,5 @@
+"use client";
+
 import { Brand } from "@/types/brand";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -26,7 +28,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
       className="animate_top mx-w-full relative block h-10 w-[98px]"
     >
       <Image
-        className="hidden opacity-50 transition-all duration-300 hover:opacity-100 "
+        className=" transition-all duration-300  "
         src={imageLight}
         alt={name}
         fill
