@@ -3,12 +3,15 @@ import { PureImage } from "@/components/Common/SectionHeader";
 import { Metadata } from "next";
 import Image from "next/image";
 
-export const metadata: Metadata = {
+const metaObject = {
   title: "Đầu tư kinh doanh bất động sản",
-
-  // other metadata
   description:
     "Quy hoạch chi tiết 1/500 khu Đô Thị Phú Long Tân phương án lựa chọn.",
+};
+export const metadata: Metadata = {
+  title: metaObject.title,
+  // other metadata
+  description: metaObject.description,
 };
 
 const SingleBlogPage = async () => {
@@ -18,23 +21,8 @@ const SingleBlogPage = async () => {
         <div className="flex flex-col-reverse gap-7.5 lg:flex-row xl:gap-12.5">
           <div className="lg:w-2/3">
             <div className="animate_top rounded-md border border-stroke bg-white p-7.5 shadow-solid-13 dark:border-strokedark dark:bg-blacksection md:p-10">
-              <div className="mb-10 w-full overflow-hidden ">
-                <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
-                  <Image
-                    src={"/images/landing/BDS/BDS.png"}
-                    alt="Kobe Steel plant that supplied"
-                    fill
-                    className="rounded-md object-cover object-center"
-                  />
-                </div>
-                <p className="mt-3 text-center italic">
-                  Quy hoạch chi tiết 1/500 khu Đô Thị Phú Long Tân phương án lựa
-                  chọn.
-                </p>
-              </div>
-
-              <h2 className="mb-5 mt-11 text-3xl font-semibold text-black dark:text-white 2xl:text-sectiontitle2">
-                Đầu tư kinh doanh bất động sản
+              <h2 className="mb-5 text-center text-3xl font-semibold text-black dark:text-white 2xl:text-sectiontitle2">
+                {metaObject.title}
               </h2>
 
               <div className="blog-details">
@@ -56,12 +44,29 @@ const SingleBlogPage = async () => {
                   Chủ đầu tư và DIC Đồng Tiến đang tham gia xây dựng.
                 </p>
 
+                <div className="mb-10 w-full overflow-hidden ">
+                  <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
+                    <Image
+                      src={"/images/landing/BDS/BDS.png"}
+                      alt={metaObject.description}
+                      fill
+                      className="rounded-md object-cover object-center"
+                    />
+                  </div>
+                  <p className="mt-3 text-center italic">
+                    {metaObject.description}
+                  </p>
+                </div>
+
                 <div>
                   {Array.from({ length: 8 }).map((_, index) => {
                     return (
                       <div key={index} className="mt-10 h-full w-full">
                         <PureImage
                           url={`/images/landing/BDS/${index + 1}.png`}
+                          style={{
+                            borderRadius: "12px",
+                          }}
                         />
                       </div>
                     );

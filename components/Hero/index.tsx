@@ -60,6 +60,7 @@ const Hero = () => {
                   src="/images/hero/HERO.png"
                   alt="Hero"
                   fill
+                  sizes="(max-width: 768px) 100vw"
                 />
               </div>
             </div>
