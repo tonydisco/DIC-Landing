@@ -15,7 +15,7 @@ const SupportPage = () => {
       <div className="h-[100vh] w-full py-6">
         <div className="relative h-full w-full">
           <iframe
-            src="https://ezir.fpts.com.vn/thongtindoanhnghiepclient/D2D"
+            src="https://ezir.fpts.com.vn/ThongTinDoanhNghiepclient/DID"
             title="qhcd"
             width="100%"
             height="100%"
