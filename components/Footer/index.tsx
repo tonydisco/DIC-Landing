@@ -28,7 +28,14 @@ const Footer = () => {
               className="animate_top w-1/2 lg:w-1/4"
             >
               <a href="/" className="relative">
-                <h1 className="text-[42px] font-bold">DIC</h1>
+                {/* <h1 className="text-[42px] font-bold">DIC</h1> */}
+                <Image
+                  width={65}
+                  height={65}
+                  sizes="(max-width: 768px) 100vw"
+                  src="/images/logo/LOGO.png"
+                  alt="logo"
+                />
               </a>
 
               <p className="mb-10 mt-5">
