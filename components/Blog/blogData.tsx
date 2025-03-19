@@ -26,7 +26,7 @@ const listLayout: Blog[] = [
     title: "Ống cống ly tâm",
     metadata:
       "Với dây chuyền sản xuất hiện đại, đội ngũ cán bộ công nhân lành nghề, hàng tháng DIC-Đồng Tiến cung cấp ra thị trường 5.000 m dài cống bê tông ly tâm chịu lực có đường kính từ 300mm đến 1.500mm.",
-    mainImage: "/images/landing/ONG-CONG.png",
+    mainImage: "/images/landing/ONG-CONG/ONG-CONG.png",
     subtitle: "Sản phẩm & năng lực thiết bị",
     key: "OCLT",
     linkTo: "/sp/ong-cong-ly-tam",
@@ -36,7 +36,7 @@ const listLayout: Blog[] = [
     title: "Cho thuê văn phòng",
     metadata:
       "Tọa lạc tại Khu công nghiệp Nhơn Trạch 2, huyện Nhơn Trạch, tỉnh Đồng Nai trên trục đường 25B có diện tích 20.000 m2, tòa nhà văn phòng của Công ty DIC Đồng Tiến với kiến trúc hiện đại, được đầu tư đầy đủ hạ tầng, kỹ thuật. Đây là nơi lý tưởng cho các nhà đầu tư, khách hàng đặt địa điểm văn phòng.",
-    mainImage: "/images/landing/CT-VP.png",
+    mainImage: "/images/landing/CT-VP/1.png",
     subtitle: "",
     key: "CTVP",
     linkTo: "/sp/cho-thue-van-phong",
