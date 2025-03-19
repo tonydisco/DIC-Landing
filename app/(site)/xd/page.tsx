@@ -3,13 +3,13 @@ import BlogItem from "@/components/Blog/BlogItem";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "DIC | Sản phẩm",
+  title: "DIC | Xây dựng dân dụng và công nghiệp",
 
   // other metadata
-  description: "Sản phẩm của DIC - Đồng Tiến",
+  description: "Xây dựng dân dụng và công nghiệp",
 };
 
-const BlogPage = async () => {
+const XayDungPage = async () => {
   return (
     <>
       {/* <!-- ===== Blog Grid Start ===== --> */}
@@ -27,4 +27,4 @@ const BlogPage = async () => {
   );
 };
 
-export default BlogPage;
+export default XayDungPage;
