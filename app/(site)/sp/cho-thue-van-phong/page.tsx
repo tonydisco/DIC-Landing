@@ -1,7 +1,6 @@
 import RelatedPost from "@/components/Blog/RelatedPost";
 import { PureImage } from "@/components/Common/SectionHeader";
 import { Metadata } from "next";
-import Image from "next/image";
 
 const metadataObject = {
   title: "Cho thuê văn phòng",

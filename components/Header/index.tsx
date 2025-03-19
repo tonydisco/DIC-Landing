@@ -9,7 +9,6 @@ import menuData from "./menuData";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
-  const [dropdownToggler, setDropdownToggler] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
 
   const pathUrl = usePathname();
@@ -38,8 +37,6 @@ const Header = () => {
       <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
         <div className="flex w-full items-center justify-between xl:w-1/4">
           <a href="/">
-            {/* <h1 className="text-[42px] font-bold">DIC</h1> */}
-
             <Image
               width={65}
               height={65}
@@ -103,11 +100,10 @@ const Header = () => {
                 <li key={key} className={menuItem.submenu && "group relative"}>
                   {menuItem.submenu ? (
                     <>
-                      <button
-                        onClick={() => setDropdownToggler(!dropdownToggler)}
-                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-primary"
-                      >
-                        {menuItem.title}
+                      <div className="flex cursor-pointer items-center justify-between gap-3 hover:text-primary">
+                        <Link href={menuItem.path ?? "#"}>
+                          {menuItem.title}
+                        </Link>
                         <span>
                           <svg
                             className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-primary"
@@ -117,11 +113,9 @@ const Header = () => {
                             <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                           </svg>
                         </span>
-                      </button>
+                      </div>
 
-                      <ul
-                        className={`dropdown ${dropdownToggler ? "flex" : ""}`}
-                      >
+                      <ul className="dropdown">
                         {menuItem.submenu.map((item) => (
                           <li
                             key={item.id}

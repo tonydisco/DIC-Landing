@@ -2,13 +2,12 @@ import RelatedPost from "@/components/Blog/RelatedPost";
 import { PureImage } from "@/components/Common/SectionHeader";
 import { Metadata } from "next";
 
-const _description =
-  "Sản phẩm & năng lực thiết bị với dây chuyền sản xuất hiện đại, đội ngũ cán bộ công nhân lành nghề, hàng tháng DIC-Đồng Tiến cung cấp ra thị trường 5.000m dài cống bê tông ly tâm chịu lực có đường kính từ 300mm đến 1.500mm ";
-const _title = "Ống cống ly tâm";
+import * as bdsPholongJsonData from "@/public/mockdata/bds-xd-nha-o-phu-long.json";
+
 export const metadata: Metadata = {
-  title: _title,
+  title: bdsPholongJsonData.title,
   // other metadata
-  description: _description,
+  description: bdsPholongJsonData.desciption,
 };
 
 const SingleBlogPage = async () => {
@@ -19,28 +18,29 @@ const SingleBlogPage = async () => {
           <div className="lg:w-2/3">
             <div className="animate_top rounded-md border border-stroke bg-white p-7.5 shadow-solid-13 dark:border-strokedark dark:bg-blacksection md:p-10">
               <h2 className="mb-5 text-center text-3xl font-semibold text-black dark:text-white 2xl:text-sectiontitle2">
-                {_title}
+                {bdsPholongJsonData.title}
               </h2>
-
               <div className="blog-details">
-                <p>{_description}</p>
-
-                <div className="mb-10 w-full overflow-hidden ">
-                  <div className="relative w-full ">
-                    <PureImage
-                      url="/images/landing/ONG-CONG/ONG-CONG.png"
-                      className="rounded"
-                    />
-                  </div>
-                  <p className="mt-3 text-center italic">
-                    Sản phẩm & năng lực thiết bị
-                  </p>
+                <p>{bdsPholongJsonData.desciption}</p>
+                <div>
+                  {bdsPholongJsonData.gallery.map((item, index) => {
+                    return (
+                      <div key={index} className="mt-10 h-full w-full">
+                        <PureImage
+                          url={item.src}
+                          style={{
+                            borderRadius: "12px",
+                          }}
+                        />
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
           </div>
           <div className="md:w-1/2 lg:w-[32%]">
-            <RelatedPost exceptKey="OCLT" />
+            <RelatedPost exceptKey="BDS" />
           </div>
         </div>
       </div>

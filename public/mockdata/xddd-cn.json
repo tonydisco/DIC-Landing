@@ -1,0 +1,26 @@
+{
+  "title": "Xây dựng dân dụng và công nghiệp",
+  "description": "Trong định hướng phát triển trung và dài hạn, công ty tập trung vào các thị trường có tốc độ tăng trưởng kinh tế cao với nhu cầu xây dựng hàng năm rất lớn như TP Hồ Chí Minh, TP Biên Hòa. Công ty tiếp tục đầu tư các thiết bị hiện đại để nâng cao năng lực thi công song song với đào tạo đội ngũ nhân lực chuyên nghiệp có tay nghề cao để có thể thực hiện thi công các công trình có giá trị hàng trăm tỷ đồng.",
+  "gallery": [
+    {
+      "src": "/images/landing/XDDD-CN/1.png",
+      "alt": "Nhà văn phòng do cán bộ, nhân viên DIC Đồng Tiến thiết kế và thi công"
+    },
+    {
+      "src": "/images/landing/XDDD-CN/2.png",
+      "alt": "Thi công nhà xưởng"
+    },
+    {
+      "src": "/images/landing/XDDD-CN/3.png",
+      "alt": "Thi công xây dựng chung cư cao cấp tại TT Long Thành"
+    },
+    {
+      "src": "/images/landing/XDDD-CN/4.png",
+      "alt": "Thi công san lấp mặt bằng công trình KĐT Sinh thái Đại Phước (465ha)"
+    },
+    {
+      "src": "/images/landing/XDDD-CN/5.png",
+      "alt": "Thi công hệ thống thoát nước KCN Long Thành"
+    }
+  ]
+}

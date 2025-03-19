@@ -1,16 +1,15 @@
 import RelatedPost from "@/components/Blog/RelatedPost";
-import { PureImage } from "@/components/Common/SectionHeader";
 import { Metadata } from "next";
 
-import * as betongJsonData from "@/public/mockdata/be-tong-thuong-pham.json";
+import * as jsonData from "@/public/mockdata/tc-dbt.json";
 
 export const metadata: Metadata = {
-  title: betongJsonData.title,
+  title: jsonData.title,
   // other metadata
-  description: betongJsonData.desciption,
+  description: jsonData.description[0],
 };
 
-const SingleBlogPage = async () => {
+const ThicongduongbetongPage = async () => {
   return (
     <section className="pb-20 pt-35 lg:pb-25 lg:pt-45 xl:pb-30 xl:pt-50">
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
@@ -18,28 +17,17 @@ const SingleBlogPage = async () => {
           <div className="lg:w-2/3">
             <div className="animate_top rounded-md border border-stroke bg-white p-7.5 shadow-solid-13 dark:border-strokedark dark:bg-blacksection md:p-10">
               <h2 className="mb-5 text-center text-3xl font-semibold text-black dark:text-white 2xl:text-sectiontitle2">
-                {betongJsonData.title}
+                {jsonData.title}
               </h2>
               <div className="blog-details">
-                <p>{betongJsonData.desciption}</p>
-
-                <div>
-                  {betongJsonData.gallery.map((item, index) => {
-                    return (
-                      <div key={index} className="mt-10 h-full w-full">
-                        <div className="relative w-full">
-                          <PureImage url={item.src} />
-                        </div>
-                        <p className="mt-3 text-center italic">{item.alt}</p>
-                      </div>
-                    );
-                  })}
-                </div>
+                {jsonData.description.map((item, index) => {
+                  return <p key={index}>{item}</p>;
+                })}
               </div>
             </div>
           </div>
           <div className="md:w-1/2 lg:w-[32%]">
-            <RelatedPost exceptKey="BTTP" />
+            <RelatedPost exceptKey="BDS" />
           </div>
         </div>
       </div>
@@ -47,4 +35,4 @@ const SingleBlogPage = async () => {
   );
 };
 
-export default SingleBlogPage;
+export default ThicongduongbetongPage;

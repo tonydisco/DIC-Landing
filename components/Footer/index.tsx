@@ -168,37 +168,37 @@ const footer_1 = [
   },
   {
     title: "Giới thiệu",
-    link: "#",
+    link: "/about-us",
   },
   {
     title: "Quan hệ cổ đông",
-    link: "#",
+    link: "qhcd",
   },
   {
     title: "Liên hệ",
-    link: "#",
+    link: "contact-us",
   },
 ];
 
 const footer_2 = [
   {
     title: "Đầu tư kinh doanh bất động sản",
-    link: "#",
+    link: "dau-tu-kinh-doanh-bds",
   },
   {
     title: "Bê tông thương phẩm",
-    link: "#",
+    link: "be-tong-thuong-pham",
   },
   {
     title: "Ống cống ly tâm",
-    link: "#",
+    link: "ong-cong-ly-tam",
   },
   {
     title: "Cho thuê văn phòng",
-    link: "#",
+    link: "cho-thue-van-phong",
   },
   {
     title: "Xây dựng dân dụng và công nghiệp",
-    link: "#",
+    link: "xay-dung-dan-dung-va-cong-nghiep",
   },
 ];

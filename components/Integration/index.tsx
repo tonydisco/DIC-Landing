@@ -31,7 +31,7 @@ const Integration = () => {
                 </div>
               </div>
               <div
-                className={`relative flex ${index % 2 ? "flex-row-reverse" : "row"} justify-between gap-20 p-4`}
+                className={`relative flex ${index % 2 ? "flex-row-reverse" : "row"} flex-wrap justify-between gap-20 p-4 md:flex-nowrap`}
               >
                 <div className="relative w-full">
                   {
@@ -47,7 +47,7 @@ const Integration = () => {
                     </div>
                   }
                   <p>{item.metadata}</p>
-                  <div className="mt-10">
+                  <div className="relative z-10 mt-15 text-center md:text-left">
                     <a
                       href={item.linkTo}
                       className=" text-blue-400"

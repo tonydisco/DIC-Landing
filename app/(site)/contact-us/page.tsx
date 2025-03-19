@@ -1,10 +1,10 @@
 import React from "react";
-import Introduce from "@/components/Introduce";
 import { Metadata } from "next";
 import { SHORT_DESCRIPTION } from "@/utils";
+import ContactUs from "@/components/Contact";
 
 export const metadata: Metadata = {
-  title: "DIC | Giới thiệu",
+  title: "DIC | Thông tin liên hệ",
 
   // other metadata
   description: SHORT_DESCRIPTION,
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const SupportPage = () => {
   return (
     <div className="pb-20 pt-30">
-      <Introduce />
+      <ContactUs />
     </div>
   );
 };

@@ -3,8 +3,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import { PureImage } from "../Common/SectionHeader";
+import { HiBuildingOffice2 } from "react-icons/hi2";
+import { IoEarth } from "react-icons/io5";
+import { MdPhoneIphone } from "react-icons/md";
+import { FaFax } from "react-icons/fa";
 
-const Contact = () => {
+const ContactUs = () => {
   /**
    * Source: https://www.joshwcomeau.com/react/the-perils-of-rehydration/
    * Reason: To fix rehydration error
@@ -57,37 +61,49 @@ const Contact = () => {
               viewport={{ once: true }}
               className="animate_top w-full rounded-lg p-7.5  dark:border dark:border-strokedark dark:bg-black "
             >
-              <h2 className="text-center text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-                Giới thiệu chung
+              <h2 className="mb-10 text-center text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
+                DIC-DONG TIEN JOINT-STOCK COMPANY
               </h2>
 
-              <p className="mb-3 p-6">
-                DIC Đồng Tiến là doanh nghiệp hàng đầu trong lĩnh vực cung cấp
-                bê tông thương phẩm, ống cống ly tâm và vật liệu xây dựng tại
-                Việt Nam. Với kinh nghiệm nhiều năm trong ngành, công ty không
-                chỉ phục vụ các dự án xây dựng dân dụng và công nghiệp mà còn mở
-                rộng sang lĩnh vực bất động sản và cho thuê văn phòng. Hoạt động
-                chủ yếu tại khu vực Nhơn Trạch, Đồng Nai và các vùng lân cận như
-                Đại Phước, Long Tân, DIC Đồng Tiến sở hữu hệ thống trạm trộn
-                hiện đại, xe bồn vận chuyển chuyên dụng, cũng như các thiết bị
-                bơm cần, bơm ngang tiên tiến, đảm bảo chất lượng sản phẩm và
-                tiến độ thi công. Ngoài ra, công ty còn cung cấp dịch vụ san lấp
-                mặt bằng, thi công đường bê tông và giải pháp thoát nước, góp
-                phần vào sự phát triển bền vững của hạ tầng đô thị. Với cam kết
-                không ngừng cải tiến và nâng cao chất lượng, DIC Đồng Tiến luôn
-                là đối tác tin cậy của nhiều chủ đầu tư và đơn vị thi công trên
-                cả nước. <br />
-              </p>
-
-              <div className=" relative aspect-[700/444] h-full w-full">
-                <PureImage url="/images/about/GIAYPHEP_DKKD.png" />
-              </div>
-
-              <div className="mb-3 gap-3 p-6 md:flex">
-                <p>ĐIỀU LỆ CÔNG TY CỔ PHẦN DIC ĐỒNG TIẾN 2017</p>
-                <a className="text-blue-400" href="/">
-                  xem ở đây
-                </a>
+              <div className="relative h-full">
+                <div className="relative h-full w-full ">
+                  <PureImage
+                    url="/images/contact-us/TTLH.png"
+                    style={{
+                      borderRadius: "30px",
+                    }}
+                  />
+                </div>
+                <div
+                  className="mt-5 rounded-[30px] md:absolute md:mt-0"
+                  style={{
+                    bottom: "0",
+                    left: "0",
+                    right: "0",
+                    padding: "20px",
+                    background: "rgba(255,255,255,0.8)",
+                    color: "#000",
+                    fontSize: "1.25rem",
+                  }}
+                >
+                  <p className="mb-3 flex cursor-pointer items-center gap-2">
+                    <HiBuildingOffice2 size={30} /> :{" "}
+                    <span>
+                      Plot 17, Street 25B, Nhơn Trach II Industrial zone, Đong
+                      Nai
+                    </span>
+                  </p>
+                  <p className="mb-3 flex cursor-pointer items-center gap-2">
+                    <MdPhoneIphone size={30} /> :{" "}
+                    <span>(84.61) 3521752 - 3521945</span>
+                  </p>
+                  <p className="mb-3 flex cursor-pointer items-center gap-2">
+                    <FaFax size={25} /> : <span>(84.61) 3521953</span>
+                  </p>
+                  <p className="mb-3 flex cursor-pointer items-center gap-2">
+                    <IoEarth size={28} /> : <span>http://dicdongtien.vn</span>
+                  </p>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -98,4 +114,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactUs;
