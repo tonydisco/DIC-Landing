@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+import { FaLocationDot } from "react-icons/fa6";
+
 const Footer = () => {
   return (
     <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
@@ -25,10 +27,9 @@ const Footer = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: true }}
-              className="animate_top w-1/2 lg:w-1/4"
+              className="animate_top w-full lg:w-1/3"
             >
               <a href="/" className="relative">
-                {/* <h1 className="text-[42px] font-bold">DIC</h1> */}
                 <Image
                   width={65}
                   height={65}
@@ -38,16 +39,24 @@ const Footer = () => {
                 />
               </a>
 
-              <p className="mb-10 mt-5">
-                Lô 17, đường 25B, Khu công nghiệp Nhơn Trạch II, Tỉnh Đồng Nai
-              </p>
-
-              <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
-                contact
-              </p>
-              <span className="text-itemtitle font-medium text-black dark:text-white">
-                info@dicdongtien.vn
-              </span>
+              <div className="relative mx-auto mt-5 h-full w-full text-black dark:text-white">
+                <p className="h-[200px] w-[350px] max-w-[350px]">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31360.742447313067!2d106.8654487743164!3d10.7273251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317522ac4e277eb9%3A0xf3c6b7dfbe24a1c2!2zQ8O0bmcgVHkgQ3AgRGljIFjDonkgROG7sW5nIMSQ4buTbmcgVGnhur9u!5e0!3m2!1svi!2s!4v1742442350872!5m2!1svi!2s"
+                    style={{
+                      border: 0,
+                      borderRadius: 12,
+                      width: "100%",
+                      height: "100%",
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                    }}
+                    loading="lazy"
+                    title="map"
+                  ></iframe>
+                </p>
+              </div>
             </motion.div>
 
             <div className="flex w-full flex-col gap-20 md:flex-row md:justify-end lg:w-2/3 xl:w-7/12">

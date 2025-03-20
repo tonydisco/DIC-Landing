@@ -61,7 +61,7 @@ const Introduce = () => {
                 Giới thiệu chung
               </h2>
 
-              <p className="mb-3 p-6">
+              <p className="mb-3 pt-6">
                 DIC Đồng Tiến là doanh nghiệp hàng đầu trong lĩnh vực cung cấp
                 bê tông thương phẩm, ống cống ly tâm và vật liệu xây dựng tại
                 Việt Nam. Với kinh nghiệm nhiều năm trong ngành, công ty không
@@ -83,7 +83,7 @@ const Introduce = () => {
                 <PureImage url="/images/about/GIAYPHEP_DKKD.png" />
               </div>
 
-              <div className="mb-3 p-6">
+              <div className="mb-3 pt-6">
                 <span className="mr-4">
                   ĐIỀU LỆ CÔNG TY CỔ PHẦN DIC ĐỒNG TIẾN 2017
                 </span>

@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 const SupportPage = () => {
   return (
-    <div className="pb-20 pt-30">
+    <section className="mx-auto max-w-c-1390 pb-20 pt-30">
       <ContactUs />
-    </div>
+    </section>
   );
 };
 

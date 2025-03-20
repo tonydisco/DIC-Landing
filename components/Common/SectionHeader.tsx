@@ -40,7 +40,7 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
         className="animate_top mx-auto text-center"
       >
         <div className="relative">
-          <h2 className="relative top-2 mx-auto mb-4 text-3xl font-bold capitalize text-white dark:text-white xl:text-itemtitle">
+          <h2 className="relative top-2 mx-auto mb-4 text-lg font-bold capitalize text-white dark:text-white xl:text-itemtitle">
             {subtitle}
           </h2>
           <div className="absolute -bottom-[12px] left-0 right-0 top-0 -z-1 w-full">

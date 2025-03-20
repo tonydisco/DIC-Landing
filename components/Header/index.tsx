@@ -11,6 +11,8 @@ const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
 
+  const [dropdownToggler, setDropdownToggler] = useState(false);
+
   const pathUrl = usePathname();
 
   // Sticky menu
@@ -104,7 +106,9 @@ const Header = () => {
                         <Link href={menuItem.path ?? "#"}>
                           {menuItem.title}
                         </Link>
-                        <span>
+                        <button
+                          onClick={() => setDropdownToggler(!dropdownToggler)}
+                        >
                           <svg
                             className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-primary"
                             xmlns="http://www.w3.org/2000/svg"
@@ -112,10 +116,12 @@ const Header = () => {
                           >
                             <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                           </svg>
-                        </span>
+                        </button>
                       </div>
 
-                      <ul className="dropdown">
+                      <ul
+                        className={`dropdown ${dropdownToggler ? "flex" : ""}`}
+                      >
                         {menuItem.submenu.map((item) => (
                           <li
                             key={item.id}
