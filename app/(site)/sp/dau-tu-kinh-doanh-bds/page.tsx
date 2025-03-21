@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 import BlogItem from "@/components/Blog/BlogItem";
-import * as bdsNhontrachJsonData from "@/public/mockdata/bds-kdc-tp-nhon-trach.json";
-import * as bdsDICJsonData from "@/public/mockdata/bds-xd-nha-o-dic.json";
-import * as bdsPhulongJsonData from "@/public/mockdata/bds-xd-nha-o-phu-long.json";
+import bdsNhontrachJsonData from "@/public/mockdata/bds-kdc-tp-nhon-trach.json";
+import bdsDICJsonData from "@/public/mockdata/bds-xd-nha-o-dic.json";
+import bdsPhulongJsonData from "@/public/mockdata/bds-xd-nha-o-phu-long.json";
 
 const metaObject = {
   title: "Đầu tư kinh doanh bất động sản",

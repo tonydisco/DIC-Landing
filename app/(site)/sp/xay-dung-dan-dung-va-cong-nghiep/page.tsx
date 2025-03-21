@@ -2,13 +2,13 @@ import RelatedPost from "@/components/Blog/RelatedPost";
 import { PureImage } from "@/components/Common/SectionHeader";
 import { Metadata } from "next";
 
-import * as jsonData from "@/public/mockdata/xddd-cn.json";
+import xaydungDDjsonData from "@/public/mockdata/xddd-cn.json";
 
 export const metadata: Metadata = {
-  title: jsonData.title,
+  title: xaydungDDjsonData.title,
 
   // other metadata
-  description: jsonData.description,
+  description: xaydungDDjsonData.description,
 };
 
 const XaydungDanDungPage = async () => {
@@ -19,13 +19,13 @@ const XaydungDanDungPage = async () => {
           <div className="lg:w-2/3">
             <div className="animate_top rounded-md border border-stroke bg-white p-4 shadow-solid-13 dark:border-strokedark dark:bg-blacksection md:p-10">
               <h2 className="mb-5 text-center text-3xl font-semibold text-black dark:text-white 2xl:text-sectiontitle2">
-                {jsonData.title}
+                {xaydungDDjsonData.title}
               </h2>
               <div className="blog-details">
-                <p>{jsonData.description}</p>
+                <p>{xaydungDDjsonData.description}</p>
 
                 <div>
-                  {jsonData.gallery.map((item, index) => {
+                  {xaydungDDjsonData?.gallery.map((item, index) => {
                     return (
                       <div key={index} className="mt-10 h-full w-full">
                         <div className="relative w-full">

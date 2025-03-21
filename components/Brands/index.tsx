@@ -63,19 +63,13 @@ const Brands = () => {
       <section className="border border-x-0 border-y-stroke bg-alabaster py-11 dark:border-y-strokedark dark:bg-black">
         <div className="mx-auto max-w-c-1390">
           <div className="slider-container">
-            <Slider {...settings}>
-              {brandData.map((brand) => (
-                <SingleBrand
-                  brand={{
-                    ...brand,
-                    styleExtend: {
-                      maxWidth: isMobile ? 180 : 220,
-                    },
-                  }}
-                  key={brand.id}
-                />
-              ))}
-            </Slider>
+            {Array.isArray(brandData) && brandData.length > 0 ? (
+              brandData.map((brand) => (
+                <SingleBrand key={brand.id} brand={brand} />
+              ))
+            ) : (
+              <div>No brands available</div>
+            )}
           </div>
         </div>
       </section>

@@ -2,7 +2,7 @@ import RelatedPost from "@/components/Blog/RelatedPost";
 import { PureImage } from "@/components/Common/SectionHeader";
 import { Metadata } from "next";
 
-import * as bdsPholongJsonData from "@/public/mockdata/bds-xd-nha-o-phu-long.json";
+import bdsPholongJsonData from "@/public/mockdata/bds-xd-nha-o-phu-long.json";
 
 export const metadata: Metadata = {
   title: bdsPholongJsonData.title,

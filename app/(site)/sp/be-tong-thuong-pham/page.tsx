@@ -2,7 +2,7 @@ import RelatedPost from "@/components/Blog/RelatedPost";
 import { PureImage } from "@/components/Common/SectionHeader";
 import { Metadata } from "next";
 
-import * as betongJsonData from "@/public/mockdata/be-tong-thuong-pham.json";
+import betongJsonData from "@/public/mockdata/be-tong-thuong-pham.json";
 
 export const metadata: Metadata = {
   title: betongJsonData.title,

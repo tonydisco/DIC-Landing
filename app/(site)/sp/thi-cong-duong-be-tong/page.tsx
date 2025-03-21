@@ -1,12 +1,12 @@
 import RelatedPost from "@/components/Blog/RelatedPost";
 import { Metadata } from "next";
 
-import * as jsonData from "@/public/mockdata/tc-dbt.json";
+import thicongJsonData from "@/public/mockdata/tc-dbt.json";
 
 export const metadata: Metadata = {
-  title: jsonData.title,
+  title: thicongJsonData.title,
   // other metadata
-  description: jsonData.description[0],
+  description: thicongJsonData.description[0],
 };
 
 const ThicongduongbetongPage = async () => {
@@ -17,10 +17,10 @@ const ThicongduongbetongPage = async () => {
           <div className="lg:w-2/3">
             <div className="animate_top rounded-md border border-stroke bg-white p-4 shadow-solid-13 dark:border-strokedark dark:bg-blacksection md:p-10">
               <h2 className="mb-5 text-center text-3xl font-semibold text-black dark:text-white 2xl:text-sectiontitle2">
-                {jsonData.title}
+                {thicongJsonData.title}
               </h2>
               <div className="blog-details">
-                {jsonData.description.map((item, index) => {
+                {thicongJsonData.description.map((item, index) => {
                   return <p key={index}>{item}</p>;
                 })}
               </div>

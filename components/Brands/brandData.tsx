@@ -1,57 +1,55 @@
-import { Brand } from "@/types/brand";
-
-const brandData: Brand[] = [
+const brandData: any = [
   {
-    id: 0.25,
+    id: 100,
     name: "Client",
     href: "#",
     imageLight: "/images/brand/brand-7.png",
     image: "/images/brand/brand-7.png",
   },
   {
-    id: 0.3,
+    id: 101,
     name: "Client",
     href: "#",
     imageLight: "/images/brand/brand-8.png",
     image: "/images/brand/brand-8.png",
   },
   {
-    id: 0.4,
+    id: 102,
     name: "Client",
     href: "#",
     imageLight: "/images/brand/brand-1.png",
     image: "/images/brand/brand-1.png",
   },
   {
-    id: 0.11,
+    id: 103,
     name: "Client",
     href: "#",
     imageLight: "/images/brand/brand-9.png",
     image: "/images/brand/brand-9.png",
   },
   {
-    id: 0.6,
+    id: 104,
     name: "Client",
     href: "#",
     imageLight: "/images/brand/brand-5.png",
     image: "/images/brand/brand-5.png",
   },
   {
-    id: 0.7,
+    id: 105,
     name: "Client",
     href: "#",
     imageLight: "/images/brand/brand-6.png",
     image: "/images/brand/brand-6.png",
   },
   {
-    id: 0.8,
+    id: 106,
     name: "Client",
     href: "#",
     imageLight: "/images/brand/brand-3.png",
     image: "/images/brand/brand-3.png",
   },
   {
-    id: 0.9,
+    id: 107,
     name: "Client",
     href: "#",
     imageLight: "/images/brand/brand-2.png",
@@ -59,7 +57,7 @@ const brandData: Brand[] = [
   },
 
   {
-    id: 0.5,
+    id: 108,
     name: "Client",
     href: "#",
     imageLight: "/images/brand/brand-4.png",
