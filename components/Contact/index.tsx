@@ -26,7 +26,7 @@ const ContactUs = () => {
       {/* <!-- ===== Contact Start ===== --> */}
       <section id="support" className="mx-auto max-w-c-1390">
         <div className="relative mx-auto ">
-          <div className="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg bg-gradient-to-t from-transparent to-[#dee7ff47] dark:bg-gradient-to-t dark:to-[#252A42]"></div>
+          <div className="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg"></div>
           <div className="absolute bottom-[-255px] left-0 -z-1 h-full w-full">
             <Image
               src="./images/shape/shape-dotted-light.svg"
@@ -59,7 +59,7 @@ const ContactUs = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-full rounded-lg p-7.5  dark:border dark:border-strokedark dark:bg-black "
+              className="animate_top w-full rounded-lg p-4  dark:border dark:border-strokedark dark:bg-black "
             >
               <h2 className="mb-10 text-center text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
                 DIC-DONG TIEN JOINT-STOCK COMPANY
@@ -75,34 +75,39 @@ const ContactUs = () => {
                   />
                 </div>
                 <div
-                  className="mt-5 rounded-[30px] md:absolute md:mt-0"
+                  className="mt-5 rounded-[30px] p-0 md:absolute md:mt-0 md:p-5"
                   style={{
                     bottom: "0",
                     left: "0",
                     right: "0",
-                    padding: "20px",
                     background: "rgba(255,255,255,0.8)",
                     color: "#000",
                     fontSize: "1.25rem",
                   }}
                 >
-                  <p className="mb-3 flex cursor-pointer items-center gap-2">
-                    <HiBuildingOffice2 size={30} /> :{" "}
+                  <div className="mb-3 flex cursor-pointer items-center gap-2">
+                    <div>
+                      <HiBuildingOffice2 color={iconColor} size={26} />{" "}
+                    </div>
                     <span>
                       Plot 17, Street 25B, Nhơn Trach II Industrial zone, Đong
                       Nai
                     </span>
-                  </p>
-                  <p className="mb-3 flex cursor-pointer items-center gap-2">
-                    <MdPhoneIphone size={30} /> :{" "}
+                  </div>
+                  <div className="mb-3 flex cursor-pointer items-center gap-2">
+                    <div>
+                      <MdPhoneIphone size={26} color={iconColor} />{" "}
+                    </div>
                     <span>(84.61) 3521752 - 3521945</span>
-                  </p>
-                  <p className="mb-3 flex cursor-pointer items-center gap-2">
-                    <FaFax size={25} /> : <span>(84.61) 3521953</span>
-                  </p>
-                  <p className="mb-3 flex cursor-pointer items-center gap-2">
-                    <IoEarth size={28} /> : <span>http://dicdongtien.vn</span>
-                  </p>
+                  </div>
+                  <div className="mb-3 flex cursor-pointer items-center gap-2">
+                    <FaFax size={24} color={iconColor} />{" "}
+                    <span>(84.61) 3521953</span>
+                  </div>
+                  <div className="mb-3 flex cursor-pointer items-center gap-2">
+                    <IoEarth size={26} color={iconColor} />{" "}
+                    <span>http://dicdongtien.vn</span>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -115,3 +120,5 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+
+const iconColor = "#757693";

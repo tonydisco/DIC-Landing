@@ -31,22 +31,20 @@ const Integration = () => {
                 </div>
               </div>
               <div
-                className={`relative flex ${index % 2 ? "flex-row-reverse" : "row"} flex-wrap justify-between gap-20 p-4 md:flex-nowrap`}
+                className={`relative flex ${index % 2 ? "flex-row-reverse" : "row"} flex-wrap justify-between gap-20 md:flex-nowrap`}
               >
                 <div className="relative w-full">
-                  {
-                    <div className="mx-auto max-w-c-1390 ">
-                      {/* <!-- Section Title Start --> */}
-                      <SectionHeader
-                        headerInfo={{
-                          subtitle: item.title,
-                          description: item.subtitle,
-                        }}
-                      />
-                      {/* <!-- Section Title End --> */}
-                    </div>
-                  }
-                  <p>{item.metadata}</p>
+                  <div className="mx-auto max-w-c-1390 ">
+                    {/* <!-- Section Title Start --> */}
+                    <SectionHeader
+                      headerInfo={{
+                        subtitle: item.title,
+                        description: item.subtitle,
+                      }}
+                    />
+                    {/* <!-- Section Title End --> */}
+                  </div>
+                  <p className="mt-10 indent-6">{item.metadata}</p>
                   <div className="relative z-10 mt-15 text-center md:text-left">
                     <a
                       href={item.linkTo}
