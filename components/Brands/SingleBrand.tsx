@@ -1,34 +1,16 @@
-"use client";
-
 import { Brand } from "@/types/brand";
-import { motion } from "framer-motion";
 import { PureImage } from "../Common/SectionHeader";
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
-  const { href, imageLight, id } = brand;
+  const { imageLight, styleExtend } = brand;
 
   return (
-    <motion.a
-      variants={{
-        hidden: {
-          opacity: 0,
-          y: -20,
-        },
-
-        visible: {
-          opacity: 1,
-          y: 0,
-        },
-      }}
-      initial="hidden"
-      whileInView="visible"
-      transition={{ duration: 1, delay: id }}
-      viewport={{ once: true }}
-      href={href}
-      className="animate_top mx-w-full relative block h-20 w-[150px]"
+    <div
+      className={`animate_top mx-w-full relative block h-15`}
+      style={{ maxWidth: "180px", ...styleExtend }}
     >
-      <PureImage className="transition-all duration-300  " url={imageLight} />
-    </motion.a>
+      <PureImage className="transition-all duration-300" url={imageLight} />
+    </div>
   );
 };
 
