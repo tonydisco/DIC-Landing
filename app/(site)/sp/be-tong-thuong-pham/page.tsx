@@ -11,6 +11,16 @@ export const metadata: Metadata = {
 };
 
 const SingleBlogPage = async () => {
+  // const lazyLoad = async () => {
+  //   const data = await import("@/public/mockdata/be-tong-thuong-pham.json");
+  //   return data;
+  // };
+
+  // const betongJsonData = await lazyLoad();
+  // console.log("====================================");
+  // console.log({ betongJsonData });
+  // console.log("====================================");
+
   return (
     <section className="pb-20 pt-35 lg:pb-25 lg:pt-45 xl:pb-30 xl:pt-50">
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
