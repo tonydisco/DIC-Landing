@@ -2,10 +2,10 @@
 
 import { Brand } from "@/types/brand";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { PureImage } from "../Common/SectionHeader";
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
-  const { href, name, imageLight, id } = brand;
+  const { href, imageLight, id } = brand;
 
   return (
     <motion.a
@@ -25,14 +25,9 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
       transition={{ duration: 1, delay: id }}
       viewport={{ once: true }}
       href={href}
-      className="animate_top mx-w-full relative block h-10 w-[98px]"
+      className="animate_top mx-w-full relative block h-20 w-[150px]"
     >
-      <Image
-        className=" transition-all duration-300  "
-        src={imageLight}
-        alt={name}
-        fill
-      />
+      <PureImage className="transition-all duration-300  " url={imageLight} />
     </motion.a>
   );
 };

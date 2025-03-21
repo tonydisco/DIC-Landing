@@ -5,22 +5,22 @@ const brandData: Brand[] = [
     id: 0.25,
     name: "Client",
     href: "#",
-    imageLight: "/images/brand/brand-1.png",
-    image: "/images/brand/brand-1.png",
+    imageLight: "/images/brand/brand-7.png",
+    image: "/images/brand/brand-7.png",
   },
   {
     id: 0.3,
     name: "Client",
     href: "#",
-    imageLight: "/images/brand/brand-2.png",
-    image: "/images/brand/brand-2.png",
+    imageLight: "/images/brand/brand-8.png",
+    image: "/images/brand/brand-8.png",
   },
   {
     id: 0.4,
     name: "Client",
     href: "#",
-    imageLight: "/images/brand/brand-3.png",
-    image: "/images/brand/brand-3.png",
+    imageLight: "/images/brand/brand-1.png",
+    image: "/images/brand/brand-1.png",
   },
   {
     id: 0.5,
@@ -43,20 +43,20 @@ const brandData: Brand[] = [
     imageLight: "/images/brand/brand-6.png",
     image: "/images/brand/brand-6.png",
   },
-  // {
-  //   id: 0.8,
-  //   name: "Client",
-  //   href: "#",
-  //   imageLight: "/images/brand/brand-7.png",
-  //   image: "/images/brand/brand-7.png",
-  // },
-  // {
-  //   id: 0.9,
-  //   name: "Client",
-  //   href: "#",
-  //   imageLight: "/images/brand/brand-8.png",
-  //   image: "/images/brand/brand-8.png",
-  // },
+  {
+    id: 0.8,
+    name: "Client",
+    href: "#",
+    imageLight: "/images/brand/brand-3.png",
+    image: "/images/brand/brand-3.png",
+  },
+  {
+    id: 0.9,
+    name: "Client",
+    href: "#",
+    imageLight: "/images/brand/brand-2.png",
+    image: "/images/brand/brand-2.png",
+  },
 ];
 
 export default brandData;
