@@ -6,5 +6,5 @@ export type Brand = {
   href: string;
   image: string;
   imageLight: string;
-  wExtend: number;
+  styleExtend?: React.CSSProperties;
 };

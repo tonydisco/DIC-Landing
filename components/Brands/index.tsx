@@ -1,15 +1,14 @@
 "use client";
-import React, { useMemo } from "react";
+import { useWindowDimensions } from "@/hooks/useDimension";
+import { VIEW_PORT } from "@/utils";
+import { useMemo } from "react";
 import Slider from "react-slick";
 import brandData from "./brandData";
 import SingleBrand from "./SingleBrand";
-import { useWindowDimensions } from "@/hooks/useDimension";
-import { VIEW_PORT } from "@/utils";
 
 const Brands = () => {
   const { width } = useWindowDimensions();
 
-  const isMobile = useMemo(() => width < VIEW_PORT.MOBILE, [width]);
   const slidesToShow = useMemo(() => {
     if (width < VIEW_PORT.MOBILE) {
       return {
@@ -62,19 +61,22 @@ const Brands = () => {
       {/* <!-- ===== Clients Start ===== --> */}
       <section className="border border-x-0 border-y-stroke bg-alabaster py-11 dark:border-y-strokedark dark:bg-black">
         <div className="mx-auto max-w-c-1390">
-          <div className="slider-container">
+          <div className="slider-container slide-customize">
             <Slider {...settings}>
-              {brandData.map((brand) => (
-                <SingleBrand
-                  brand={{
-                    ...brand,
-                    styleExtend: {
-                      maxWidth: isMobile ? 180 : 220,
-                    },
-                  }}
-                  key={brand.id}
-                />
-              ))}
+              {brandData.map((brand) => {
+                const isSikaBrand = brand.id === 104;
+                return (
+                  <SingleBrand
+                    brand={{
+                      ...brand,
+                      styleExtend: {
+                        height: isSikaBrand ? 100 : 50,
+                      },
+                    }}
+                    key={brand.id}
+                  />
+                );
+              })}
             </Slider>
           </div>
         </div>
